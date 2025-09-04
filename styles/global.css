@@ -21,14 +21,21 @@
   --accent-red: #e9a9b3;
 
   /* Gradient Colors */
-  --gradient-border: linear-gradient(135deg, #77c0af 0%, #d1dc97 14.84%, #e9a9b3 32.15%, #d586e0 65.79%, #91a1fa 84.58%);
+  --gradient-border: linear-gradient(
+    135deg,
+    #77c0af 0%,
+    #d1dc97 14.84%,
+    #e9a9b3 32.15%,
+    #d586e0 65.79%,
+    #91a1fa 84.58%
+  );
   --gradient-background: linear-gradient(135deg, #d586e0 0%, #91a1fa 98.93%);
   --gradient-content: linear-gradient(135deg, #c7c9cc 0%, #3d3d3d 100%);
 
   /* Typography - Font Families */
-  --font-sora: 'Sora', sans-serif;
-  --font-roboto-mono: 'Roboto Mono', monospace;
-  --font-roboto-flex: 'Roboto Flex', sans-serif;
+  --font-sora: "Sora", sans-serif;
+  --font-roboto-mono: "Roboto Mono", monospace;
+  --font-roboto-flex: "Roboto Flex", sans-serif;
 
   /* Typography - Display Sizes (Sora) */
   --display-large: 72px;
@@ -59,4 +66,19 @@
   /* Typography - Text Cases */
   --text-uppercase: uppercase;
   --text-default: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  background-color: var(--background-primary);
 }

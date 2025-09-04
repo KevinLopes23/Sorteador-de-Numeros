@@ -1,0 +1,23 @@
+.header {
+  padding: clamp(12px, 4vw, 24px);
+}
+
+.header-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-block-start: clamp(16px, 6vw, 76px);
+  padding-inline-start: clamp(16px, 6vw, 76px);
+}
+
+.header-container__title {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+
+  h1 {
+    font-weight: var(--font-weight-extrabold);
+    color: var(--content-primary);
+    font-family: var(--font-sora);
+  }
+}
