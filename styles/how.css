@@ -39,7 +39,7 @@
       font-family: var(--font-roboto-flex);
       font-size: var(--label-medium);
       font-weight: var(--font-weight-bold);
-      color: var(--content-primary);
+      color: var(--content-brand);
     }
 
     p {
