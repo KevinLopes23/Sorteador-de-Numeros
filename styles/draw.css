@@ -1,0 +1,23 @@
+.main-draw-container {
+  display: flex;
+}
+
+.draw-title {
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  gap: 5px;
+
+  h3 {
+    color: var(--content-primary);
+    font-size: var(--label-medium);
+    font-weight: var(--font-weight-extrabold);
+    font-family: var(--font-sora);
+  }
+
+  p {
+    color: var(--content-secondary);
+    font-size: var(--paragraph-large);
+    font-weight: 150;
+  }
+}

@@ -1,5 +1,6 @@
 .main-container {
   display: grid;
+  grid-template-columns: 1fr 1fr; 
   padding: clamp(12px, 4vw, 24px);
 }
 
@@ -48,7 +49,7 @@
       font-weight: var(--font-weight-medium);
       color: var(--content-secondary);
       line-height: var(--line-height-150);
-      padding-left: 32px; 
+      padding-left: 32px;
     }
 
     img {
