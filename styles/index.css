@@ -1,4 +1,7 @@
 @import url(global.css);
+@import url(background.css);
 @import url(header.css);
 @import url(how.css);
 @import url(draw.css);
+@import url(animations.css);
+@import url(responsive.css);

@@ -1,0 +1,345 @@
+/* Design Responsivo - Mobile First */
+
+/* Variáveis responsivas */
+:root {
+  --container-padding: 16px;
+  --section-gap: 24px;
+  --card-padding: 16px;
+}
+
+/* Base - Mobile (320px+) */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--section-gap);
+  padding: var(--container-padding);
+  min-height: calc(100vh - 80px);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.main-information-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: var(--card-padding);
+}
+
+.main-information-container h3 {
+  font-family: var(--font-roboto-mono);
+  font-size: var(--paragraph-small);
+  font-weight: var(--font-weight-medium);
+  color: var(--content-secondary);
+  text-transform: var(--text-uppercase);
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.main-information-container h1 {
+  font-family: var(--font-sora);
+  font-size: clamp(28px, 8vw, var(--display-large));
+  font-weight: var(--font-weight-extrabold);
+  color: var(--content-primary);
+  text-transform: var(--text-uppercase);
+  letter-spacing: 2px;
+  line-height: var(--line-height-130);
+  margin: 0;
+  background: var(--gradient-content);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.draw-title {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.draw-title h3 {
+  font-family: var(--font-roboto-mono);
+  font-size: var(--paragraph-medium);
+  font-weight: var(--font-weight-medium);
+  color: var(--content-secondary);
+  text-transform: var(--text-uppercase);
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.draw-title p {
+  font-family: var(--font-roboto-flex);
+  font-size: var(--paragraph-medium);
+  color: var(--content-secondary);
+  line-height: var(--line-height-150);
+  margin: 0;
+}
+
+/* Ajustes para inputs em mobile */
+.draw-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.input-group input[type="number"] {
+  width: 100%;
+  height: 56px;
+  padding: 16px;
+  font-size: var(--label-medium);
+}
+
+/* Ajustes para toggle em mobile */
+.draw-options {
+  justify-content: center;
+  padding: 8px 0;
+}
+
+.toggle-text {
+  font-size: var(--paragraph-medium);
+}
+
+/* Resultados responsivos */
+.result-container {
+  padding: 24px var(--card-padding);
+}
+
+.result-title {
+  font-size: clamp(20px, 6vw, var(--display-small));
+}
+
+.result-numbers {
+  gap: 12px;
+}
+
+.result-number {
+  min-width: 60px;
+  height: 60px;
+  font-size: clamp(18px, 5vw, var(--display-medium));
+}
+
+/* Small Mobile (480px+) */
+@media (min-width: 480px) {
+  :root {
+    --container-padding: 20px;
+    --section-gap: 32px;
+    --card-padding: 20px;
+  }
+  
+  .draw-inputs {
+    flex-direction: row;
+    align-items: end;
+  }
+  
+  .input-group {
+    flex: 1;
+    max-width: 120px;
+  }
+  
+  .input-group input[type="number"] {
+    height: 48px;
+    padding: 12px;
+  }
+  
+  .result-number {
+    min-width: 70px;
+    height: 70px;
+  }
+}
+
+/* Tablet Portrait (768px+) */
+@media (min-width: 768px) {
+  :root {
+    --container-padding: 32px;
+    --section-gap: 48px;
+    --card-padding: 32px;
+  }
+  
+  .main-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: start;
+  }
+  
+  .main-information-container {
+    padding: var(--card-padding);
+  }
+  
+  .main-draw-container {
+    padding: var(--card-padding);
+  }
+  
+  .draw-inputs {
+    gap: 20px;
+  }
+  
+  .input-group input[type="number"] {
+    width: 80px;
+  }
+  
+  .draw-options {
+    justify-content: flex-start;
+  }
+  
+  .result-number {
+    min-width: 80px;
+    height: 80px;
+  }
+  
+  .result-numbers {
+    gap: 16px;
+  }
+}
+
+/* Tablet Landscape / Small Desktop (1024px+) */
+@media (min-width: 1024px) {
+  :root {
+    --container-padding: 40px;
+    --section-gap: 64px;
+    --card-padding: 40px;
+  }
+  
+  .main-container {
+    gap: 64px;
+    padding: var(--container-padding) 40px;
+  }
+  
+  .main-information-container h1 {
+    font-size: var(--display-large);
+  }
+  
+  .draw-title h3 {
+    font-size: var(--paragraph-large);
+  }
+  
+  .draw-title p {
+    font-size: var(--paragraph-large);
+  }
+  
+  .result-title {
+    font-size: var(--display-small);
+  }
+  
+  .result-number {
+    min-width: 90px;
+    height: 90px;
+    font-size: var(--display-medium);
+  }
+}
+
+/* Large Desktop (1440px+) */
+@media (min-width: 1440px) {
+  .main-container {
+    max-width: 1400px;
+    gap: 80px;
+  }
+  
+  .main-information-container,
+  .main-draw-container {
+    padding: 48px;
+  }
+  
+  .result-number {
+    min-width: 100px;
+    height: 100px;
+  }
+}
+
+/* Extra Large Desktop (1920px+) */
+@media (min-width: 1920px) {
+  .main-container {
+    max-width: 1600px;
+  }
+}
+
+/* Ajustes para altura da tela */
+@media (max-height: 600px) and (min-width: 768px) {
+  .main-container {
+    gap: 32px;
+  }
+  
+  .main-information-container,
+  .main-draw-container {
+    padding: 24px;
+  }
+}
+
+/* Modo paisagem em mobile */
+@media (max-width: 767px) and (orientation: landscape) {
+  .main-container {
+    gap: 20px;
+    padding: 16px;
+  }
+  
+  .main-information-container h1 {
+    font-size: clamp(24px, 6vw, 40px);
+  }
+  
+  .draw-number {
+    padding: 20px;
+  }
+  
+  .result-container {
+    padding: 20px 16px;
+  }
+}
+
+/* Ajustes para telas muito pequenas */
+@media (max-width: 320px) {
+  :root {
+    --container-padding: 12px;
+    --card-padding: 12px;
+  }
+  
+  .main-information-container h1 {
+    font-size: 24px;
+  }
+  
+  .draw-number {
+    padding: 16px;
+    gap: 20px;
+  }
+  
+  .input-group input[type="number"] {
+    height: 48px;
+    font-size: 16px;
+  }
+  
+  .draw-button {
+    height: 48px;
+    font-size: 14px;
+  }
+  
+  .result-number {
+    min-width: 50px;
+    height: 50px;
+    font-size: 18px;
+  }
+}
+
+/* Ajustes para impressão */
+@media print {
+  .shapes-container,
+  .draw-button,
+  .draw-again-button {
+    display: none;
+  }
+  
+  body {
+    background: white;
+    color: black;
+  }
+  
+  .main-container {
+    display: block;
+  }
+}

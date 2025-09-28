@@ -30,6 +30,7 @@
     #91a1fa 84.58%
   );
   --gradient-background: linear-gradient(135deg, #d586e0 0%, #91a1fa 98.93%);
+  --gradient-primary: linear-gradient(135deg, #d586e0 0%, #91a1fa 98.93%);
   --gradient-content: linear-gradient(135deg, #c7c9cc 0%, #3d3d3d 100%);
 
   /* Typography - Font Families */
@@ -51,6 +52,7 @@
   --paragraph-small: 12px;
 
   /* Typography - Label Sizes (Roboto Flex) */
+  --label-large: 18px;
   --label-medium: 20px;
   --label-small: 16px;
 

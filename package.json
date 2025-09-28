@@ -1,0 +1,35 @@
+{
+  "name": "sorteador-de-numeros",
+  "version": "1.0.0",
+  "description": "Uma aplicação web moderna e intuitiva para sortear números aleatórios com diversas opções de configuração.",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "serve": "npx serve .",
+    "dev": "npx live-server",
+    "build": "echo 'Projeto estático - não necessita build'",
+    "deploy:vercel": "vercel --prod",
+    "deploy:netlify": "netlify deploy --prod --dir ."
+  },
+  "keywords": [
+    "sorteador",
+    "números",
+    "random",
+    "javascript",
+    "html",
+    "css",
+    "web-app"
+  ],
+  "author": "Seu Nome",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seu-usuario/sorteador-de-numeros.git"
+  },
+  "homepage": "https://seu-projeto.vercel.app",
+  "devDependencies": {},
+  "dependencies": {},
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}

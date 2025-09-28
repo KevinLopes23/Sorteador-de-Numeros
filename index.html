@@ -13,6 +13,13 @@
     />
   </head>
   <body>
+    <!-- Shapes decorativas -->
+    <div class="shapes-container">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+      <div class="shape shape-4"></div>
+    </div>
     <header class="header">
       <div class="header-container">
         <div class="header-container__title">
@@ -60,8 +67,47 @@
               e veja os resultados na tela. É rápido e fácil!
             </p>
           </div>
+          <div class="draw-number">
+            <div class="draw-inputs">
+              <div class="input-group">
+                <label>NÚMEROS</label>
+                <input type="number" value="2" min="1" max="100">
+              </div>
+              <div class="input-group">
+                <label>DE</label>
+                <input type="number" value="1" min="1" max="1000">
+              </div>
+              <div class="input-group">
+                <label>DE</label>
+                <input type="number" value="100" min="1" max="1000">
+              </div>
+            </div>
+            <div class="draw-options">
+              <div class="toggle-container">
+                <input type="checkbox" id="no-repeat" class="toggle-input">
+                <label for="no-repeat" class="toggle-label">
+                  <span class="toggle-slider"></span>
+                  <span class="toggle-text">Não repetir número</span>
+                </label>
+              </div>
+            </div>
+            <button class="draw-button" id="draw-btn">Sortear</button>
+          </div>
+          
+          <!-- Seção de Resultados -->
+          <div class="result-container" id="result-container" style="display: none;">
+            <div class="result-header">
+              <h2 class="result-title">Resultado do sorteio</h2>
+              <p class="result-subtitle" id="result-subtitle">2 números sorteados</p>
+            </div>
+            <div class="result-numbers" id="result-numbers">
+              <!-- Números sorteados aparecerão aqui -->
+            </div>
+            <button class="draw-again-button" id="draw-again-btn">Sortear novamente</button>
+          </div>
         </div>
       </div>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
