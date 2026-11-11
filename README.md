@@ -1,152 +1,71 @@
-# 🎲 Sorteador de Números
+<div align="center">
+  <h1>🎲 Sorteador de Números</h1>
+  <p><strong>Sorteie números aleatórios em um intervalo, com ou sem repetição, direto no navegador.</strong></p>
+  <p>
+    <img alt="HTML5" src="https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white">
+    <img alt="CSS3" src="https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white">
+    <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-vanilla-F7DF1E?logo=javascript&logoColor=black">
+    <img alt="Vercel" src="https://img.shields.io/badge/Vercel-000000?logo=vercel&logoColor=white">
+    <a href="LICENSE"><img alt="Licença MIT" src="https://img.shields.io/badge/licença-MIT-blue"></a>
+    <br>
+    <a href="https://number-sorter-app.vercel.app/"><img alt="Ver online" src="https://img.shields.io/badge/Ver_online-Vercel-A86DE8?style=for-the-badge&logo=vercel&logoColor=white"></a>
+  </p>
+</div>
 
-Uma aplicação web moderna e intuitiva para sortear números aleatórios com diversas opções de configuração.
+<p align="center">
+  <img src="docs/preview.webp" alt="Sorteador de Números no desktop" width="74%">
+  <img src="docs/preview-mobile.webp" alt="Sorteador de Números no celular" width="22%">
+</p>
 
-## 🌟 Funcionalidades
+## 💡 Sobre
 
-- **Sorteio Personalizado**: Defina a quantidade de números a sortear (1-100)
-- **Intervalo Customizável**: Configure valores mínimo e máximo (1-1000)
-- **Números Únicos**: Opção para não repetir números no sorteio
-- **Interface Moderna**: Design responsivo com animações suaves
-- **Validação em Tempo Real**: Verificação automática dos valores inseridos
-- **Experiência Fluida**: Animações e feedback visual durante o sorteio
+Aplicação web simples para sorteios: você define quantos números quer, o intervalo (mínimo e máximo) e se pode haver repetição, e o resultado aparece na tela com animação, número por número. Feita com HTML, CSS e JavaScript puros, a partir de um layout no Figma, sem framework e sem build.
 
-## 🚀 Demo
+## ✨ Funcionalidades
 
-[Ver Demo Online](https://number-sorter-app.vercel.app/) 
+- Quantidade de números por sorteio (até 100)
+- Intervalo personalizável de mínimo e máximo (até 1000)
+- Opção **"Não repetir número"** para sorteios sem repetição
+- Validação dos campos (mínimo menor que máximo, quantidade possível sem repetição)
+- Resultado animado, revelado número por número
+- Botão "Sortear novamente" para voltar ao início
+- Layout responsivo do celular ao desktop
 
-## 🛠️ Tecnologias Utilizadas
+## 🛠️ Tecnologias
 
-- **HTML5**: Estrutura semântica da aplicação
-- **CSS3**: Estilização moderna com animações e design responsivo
-- **JavaScript (Vanilla)**: Lógica de sorteio e interatividade
-- **Google Fonts**: Tipografia (Roboto Flex, Roboto Mono, Sora)
+- HTML5
+- CSS3 (estilos separados por seção em `styles/`, com animações e media queries)
+- JavaScript puro
+- Google Fonts (Roboto Flex, Roboto Mono e Sora)
+- Deploy na Vercel
 
-## 📁 Estrutura do Projeto
+## 🚀 Como rodar
 
-```
-Sorteador-de-Numeros/
-├── index.html              # Página principal
-├── script.js               # Lógica JavaScript
-├── styles/                 # Arquivos de estilo
-│   ├── index.css          # Importações principais
-│   ├── global.css         # Estilos globais
-│   ├── background.css     # Elementos decorativos
-│   ├── header.css         # Cabeçalho
-│   ├── how.css           # Seção "Como funciona"
-│   ├── draw.css          # Área de sorteio
-│   ├── animations.css    # Animações
-│   └── responsive.css    # Media queries
-├── img/                   # Imagens e ícones SVG
-│   ├── logo.svg
-│   ├── how.svg
-│   ├── mensagem.svg
-│   ├── replay.svg
-│   └── seta.svg
-└── README.md             # Documentação
-```
+Não há dependências nem build. Basta abrir o `index.html` no navegador ou servir a pasta:
 
-## 🎯 Como Usar
-
-1. **Defina a Quantidade**: Escolha quantos números deseja sortear (1-100)
-2. **Configure o Intervalo**: Defina os valores mínimo e máximo
-3. **Opções Avançadas**: Marque "Não repetir número" se desejar números únicos
-4. **Sortear**: Clique no botão "Sortear" e aguarde o resultado
-5. **Novo Sorteio**: Use "Sortear novamente" para fazer um novo sorteio
-
-## 🔧 Instalação e Execução Local
-
-### Pré-requisitos
-- Navegador web moderno
-- Servidor web local (opcional)
-
-### Método 1: Abrir diretamente
 ```bash
-# Clone o repositório
 git clone https://github.com/KevinLopes23/Sorteador-de-Numeros.git
-
-# Entre no diretório
 cd Sorteador-de-Numeros
-
-# Abra o index.html no navegador
+npm start          # python -m http.server 8000 → http://localhost:8000
+# ou
+npm run serve      # npx serve .
 ```
 
-### Método 2: Servidor local
-```bash
-# Com Python
-python -m http.server 8000
+Mais opções de publicação (Vercel, Netlify, GitHub Pages) estão no [DEPLOY.md](DEPLOY.md).
 
-# Com Node.js (npx)
-npx serve .
+## 📁 Estrutura
 
-# Com PHP
-php -S localhost:8000
+```
+index.html      página principal
+script.js       validação e lógica do sorteio
+styles/         global, header, how, draw, animations, responsive...
+img/            logo e ícones SVG
 ```
 
-Acesse: `http://localhost:8000`
+## 📄 Licença
 
-## 🌐 Deploy
+Distribuído sob a licença [MIT](LICENSE).
 
-Este projeto pode ser facilmente deployado em diversas plataformas:
+## 👤 Autor
 
-### Vercel
-```bash
-npm i -g vercel
-vercel
-```
-
-### Netlify
-1. Faça upload da pasta do projeto
-2. Configure o build: deixe em branco (projeto estático)
-3. Publish directory: `/` (raiz)
-
-### GitHub Pages
-1. Faça push para um repositório GitHub
-2. Vá em Settings > Pages
-3. Selecione a branch main
-4. Aguarde o deploy automático
-
-## ⚙️ Configurações
-
-### Limites do Sistema
-- **Quantidade máxima**: 100 números por sorteio
-- **Valor máximo**: 1000 para min/max
-- **Validação**: Números únicos não podem exceder o range disponível
-
-### Personalização
-Para personalizar cores, fontes ou animações, edite os arquivos CSS na pasta `styles/`.
-
-## 🎨 Design
-
-- **Paleta de Cores**: Gradientes modernos com tons de azul e roxo
-- **Tipografia**: Combinação de Roboto Flex, Roboto Mono e Sora
-- **Animações**: Transições suaves e efeitos de entrada
-- **Responsividade**: Adaptável a diferentes tamanhos de tela
-
-## 🤝 Contribuição
-
-1. Faça um fork do projeto
-2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
-3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
-4. Push para a branch (`git push origin feature/AmazingFeature`)
-5. Abra um Pull Request
-
-## 📝 Licença
-
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
-
-## 👨‍💻 Autor
-
-**Kevin Lopes**
-- GitHub: [@KevinLopes23](https://github.com/KevinLopes23)
-- LinkedIn: [Kevin Lopes](https://www.linkedin.com/in/kevin-lopes-151797221/)
-
-## 🙏 Agradecimentos
-
-- Google Fonts pela tipografia
-- Comunidade open source pelas inspirações
-- Todos que contribuíram com feedback e sugestões
-
----
-
-⭐ Se este projeto te ajudou, considere dar uma estrela no repositório!
+Feito por [Kevin Lopes](https://github.com/KevinLopes23).

@@ -20,13 +20,13 @@
     "css",
     "web-app"
   ],
-  "author": "Seu Nome",
+  "author": "Kevin Lopes",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/seu-usuario/sorteador-de-numeros.git"
+    "url": "https://github.com/KevinLopes23/Sorteador-de-Numeros.git"
   },
-  "homepage": "https://seu-projeto.vercel.app",
+  "homepage": "https://number-sorter-app.vercel.app/",
   "devDependencies": {},
   "dependencies": {},
   "engines": {
